@@ -1,0 +1,14 @@
+{% block content %}
+    <h2>Natjecatelji</h2>
+    <ul>
+        {% for natjecatelj in object_list %}
+            <li>
+                Ime: {{ natjecatelj.natjecatelj_ime }}<br>
+                Prezime: {{ natjecatelj.natjecatelj_prezime }}<br>
+                OIB: {{ natjecatelj.natjecatelj_OIB }}<br>
+                Natjecaji: {{ natjecatelj.natjecatelj_matjecaji }}
+
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

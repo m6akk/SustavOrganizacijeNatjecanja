@@ -1,0 +1,11 @@
+{% block content %}
+    <h2>Organizatori</h2>
+    <ul>
+        {% for organizator in object_list %}
+            <li>
+                Naziv: {{ organizator.organizator_naziv }}<br>
+                OIB: {{ organizator.organizator_OIB }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

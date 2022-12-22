@@ -1,0 +1,12 @@
+{% block content %}
+    <h2>Kontakti</h2>
+    <ul>
+        {% for kontakt in object_list %}
+            <li>
+                Natjecatelj: {{ kontakt.kontakt_natjecatelj }}<br>
+                Email: {{ kontakt.kontakt_email }}<br>
+                Mobitel: {{ kontakt.kontakt_mobitel }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

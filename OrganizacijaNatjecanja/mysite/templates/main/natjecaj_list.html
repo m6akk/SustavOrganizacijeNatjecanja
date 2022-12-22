@@ -1,0 +1,12 @@
+{% block content %}
+    <h2>Natjecaji</h2>
+    <ul>
+        {% for natjecaj in object_list %}
+            <li>
+                Naziv: {{ natjecaj.natjecaj_naziv }}<br>
+                Broj natjecaja: {{ natjecaj.natjecaj_broj }}<br>
+                Organizator natjecaja: {{ natjecaj.natjecaj_organizator }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
